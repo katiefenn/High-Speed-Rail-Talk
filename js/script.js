@@ -18,6 +18,19 @@ $(document).ready(function() {
 			$(window).scrollLeft(index * $('body').width());
 		}
 	});
+	
+	$(document).click(function(event) {
+		event.stopPropagation();
+		if ($(event.currentTarget).not('a')) {
+			event.preventDefault();
+			index = index + 1;
+			$(window).scrollLeft(index * $('body').width());
+		}
+	});
+	
+	$('a').click(function(event) {
+		event.stopPropagation();
+	});
 });
 
 

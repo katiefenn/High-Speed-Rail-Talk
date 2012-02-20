@@ -160,12 +160,40 @@ body {
 	background-position: center;
 }
 
+.slide article {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 94%;
+	padding: 3%;
+}
+
+article p {
+	padding: 10px 3%;
+	font-size: 1.5em;
+}
+
+a,
+a:visited {
+	color: white;
+}
+
+ul {
+	font-size: 1.5em;
+	padding: 0 3%;
+}
+
 h1, h2, h3 {
 	transition: opacity 2s;
 	-mos-transition: opacity 2s;
 	-webkit-transition: opacity 2s;
 	-o-transition: opacity 2s;
 	opacity: 0.8;
+}
+
+h4 {
+	font-size: 2em;
+	margin: 10px 0 5px;
 }
 
 h1:hover,
@@ -339,6 +367,18 @@ figure td {
 	left: 1900%;	
 }
 
+.slide:nth-child(21) {
+	left: 2000%;	
+}
+
+.slide:nth-child(22) {
+	left: 2100%;
+}
+
+.slide:nth-child(23) {
+	left: 2200%;
+}
+
 .slide-introduction-1 {
 	background-image: url(../img/800px-TGV-Duplex_Paris.jpg);
 	color: white;
@@ -390,33 +430,33 @@ figure td {
 	position: absolute;
 	width: 40%;
 	left: 30%;
-	top: 20%;
+	top: 12%;
 	margin: 0;
 }
 
 .slide-france-organisation table.sncf-infra {
 	left: 6%;
-	top: 35%;
+	top: 23%;
 }
 
 .slide-france-organisation table.sncf-proximites {
 	left: 24%;
-	top: 35%;
+	top: 23%;
 }
 
 .slide-france-organisation table.sncf-voyages {
 	left: 42%;
-	top: 35%;
+	top: 23%;
 }
 
 .slide-france-organisation table.sncf-geodis {
 	left: 61%;
-	top: 35%;
+	top: 23%;
 }
 
 .slide-france-organisation table.sncf-gares-connexions {
 	left: 80%;
-	top: 35%;
+	top: 23%;
 }
 
 .slide-france-organisation table.sncf-reseau-ferre-de-france {
@@ -474,7 +514,7 @@ figure td {
 }
 
 .slide-britain-organisation-table td {
-	font-size: 1em;
+	font-size: 1.4em;
 	text-align: center;
 }
 
@@ -483,7 +523,7 @@ figure td {
 	width: 15%;
 	height: 30%;
 	left: 10%;
-	top: 25%;
+	top: 18%;
 }
 
 .slide-britain-organisation-table table.britain-railways-train-operating-companies {
@@ -491,7 +531,7 @@ figure td {
 	width: 40%;
 	height: 30%;
 	left: 30%;
-	top: 25%;
+	top: 18%;
 }
 
 .slide-britain-organisation-table table.britain-railways-other {
@@ -499,7 +539,7 @@ figure td {
 	width: 15%;
 	height: 30%;
 	left: 75%;
-	top: 25%;
+	top: 18%;
 }
 
 .slide-britain-organisation-table table.britain-railways-rolling-stock-operating-companies {
@@ -525,11 +565,71 @@ figure td {
 	background-image: url(../img/GBR_rail_passenegers_by_year.gif);
 }
 
+.slide-britain-failures-projects {
+	background-image: url(../img/5776693010_3fc211e587_o.jpg);
+}
+
 .slide-britain-failures-accidents {
 	background-image: url(../img/VirginPendolinoDerailment.jpg);
+}
+
+.slide-britain-future {
+	background-image: url(../img/2737965201_8e4f573b10_o.jpg);
 }
 
 .slide iframe {
 	height: 100%;
 	width: 100%;
+}
+
+@media all and (max-width: 1050px) {
+	body {
+		font-size: 0.5em;
+	}
+	
+	h2,
+	#slide-1 h1,
+	#slide-2 h1{
+		top: 15px;
+		right: 0px;
+		padding: 10px;
+		line-height: 32px;
+		width: 300px
+	}
+	
+	h3,
+	#slide-1 h2,
+	#slide-2 h2 {
+		top: 67px;
+		right: 0px;
+		padding: 10px;
+		line-height: 32px;
+		width: 300px;
+	}
+	
+	.titles-bottom-left h2 {
+		top: auto;
+		bottom: 57px;
+		left: 0px;
+	}
+	
+	.titles-bottom-left h3 {
+		top: auto;
+		bottom: 5px;
+		left: 0px;
+	}
+	
+	.titles-bottom-right h2 {
+		top: auto;
+		left: auto;
+		bottom: 57px;
+		right: 0px;
+	}
+	
+	.titles-bottom-right h3 {
+		top: auto;
+		left: auto;
+		bottom: 5px;
+		right: 0px;
+	}
 }
